@@ -25,7 +25,7 @@ Mediante el reconocimiento del peso de las cosas a transportar se realiza una se
 ![alt text]( https://github.com/StegmanCristian/Cinta-Transportadora/blob/main/Recursos/diagrama%20de%20%20estados%20y%20transiciones%20.jpeg)
 
 ##### Donde:
-- *p* : Peso leido
-- *p_set1* : Peso seteado donde deja de ser "Liviano" y pasa a ser "Poco Pesado"
-- *p_set2* : Peso seteado donde deja de ser "Poco Pesado" y pasa a ser "Pesado"
+- **p** : Peso leido
+- **p_set1** : Peso seteado donde deja de ser "Liviano" y pasa a ser "Poco Pesado"
+- **p_set2** : Peso seteado donde deja de ser "Poco Pesado" y pasa a ser "Pesado"
 
