@@ -9,7 +9,7 @@
 ## MEMORIA DESCRIPTIVA
  
 ### Descripcion del funcionamiento
-El proyecto consiste en un sistema de seleccion para una cinta transportadora que de acuerdo al peso del objeto, determina la direccion del mismo.
+El proyecto consiste en un sistema de seleccion para una cinta transportadora que, de acuerdo al peso del objeto, determina la direccion del mismo.
 El sistema posee:
 - Un sensor de peso
 - Un selector de direccion.
