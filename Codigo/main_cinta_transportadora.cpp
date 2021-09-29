@@ -1,4 +1,4 @@
-/* Maquina de estados Stegman Cristian 
+/* Main de Maquina de estados Stegman Cristian 
 	- Cinta transportadora con seleccion por peso*/
 
 #include "..\Codigo\My_Lib.h" 
@@ -8,7 +8,7 @@ int main()
 	peso_t peso;
 	estados_t estado=espera;
 	peso= f_set();
-	
+	if (peso.e==-1) return 0;
 	while(1){
 		switch (estado){
 			case espera:

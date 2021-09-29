@@ -1,3 +1,6 @@
+/* Cinta transportadora con seleccion por peso
+		-Libreria */
+		
 #ifndef MY_LIB
 #define MY_LIB
 
@@ -6,15 +9,23 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+
 // Definimos un tipo de dato que contenga los estados posibles
-typedef enum{espera,izquierda,recto,derecha,error}estados_t;
+typedef enum{
+	espera,
+	izquierda,
+	recto,
+	derecha,
+	error
+	}estados_t;
 
 // Definimos tipo de dato que va a manejar la maquina durante todo el proceso de transiciones
 typedef struct {
-	int p;
-	char e;
-	int p_set1;
-	int p_set2;
+	int p;  //peso leido
+	char e; //flag de error en la medicion de peso
+	int p_set1; //valor inferior de peso para cosas "poco pesadas"
+	int p_set2; //limite superior de peso para cosas "poco pesadas"
 }peso_t;
 
 
@@ -29,6 +40,14 @@ estados_t f_recto(peso_t);
 estados_t f_derecha(peso_t);
 estados_t f_error(peso_t);
 
+//funciones secundarias y de simulación funcionamiento 
+char *getkey(char *);
+peso_t f_conf (char *); //lee y obtiene informacion del archivo de configuracion
+char f_sensores (void); //simula detector de errores
+int f_pesar (void); //simula sensor de peso
+bool f_llave(bool); //simula interruptor de error
 
+#include "../Codigo/f_estado.cpp"
+#include "../Codigo/f_funcionamiento.cpp"
 
 #endif
