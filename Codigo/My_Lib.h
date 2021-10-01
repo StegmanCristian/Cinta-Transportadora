@@ -13,11 +13,11 @@
 
 // Definimos un tipo de dato que contenga los estados posibles
 typedef enum{
-	espera,
-	izquierda,
-	recto,
-	derecha,
-	error
+	espera=0,
+	izquierda=1,
+	recto=2,
+	derecha=3,
+	error=4
 	}estados_t;
 
 // Definimos tipo de dato que va a manejar la maquina durante todo el proceso de transiciones
